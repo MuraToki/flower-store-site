@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fa2e227030.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <title>花屋　ルナーリア</title>
+</head>
+<body>
+  <div id="head-nav"></div>
+  <header>
+    <div class="fixed w-full z-10 bg-white items-center space-x-72 md:h-20 md:flex justify-around">
+      <div class="font-extrabold font-serif py-3" id="head">
+        <h1 class="text-4xl">ルナーリア</h1>
+        <p class="text-sm">〜花に思いを〜</p>
+      </div>
+      
+      <nav>
+        <ul class="hidden text-xl font-serif md:flex space-x-4 ">
+          <li class="hover:text-green-500"><a href="#head-nav">TOP</a></li>
+          <li class="hover:text-green-500"><a href="#flo">SHOW</a></li>
+          <li class="hover:text-green-500"><a href="#map">MAP</a></li>
+          <li class="hover:text-green-500"><a href="#connect">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="fixed bottom-0 z-10 flex w-full text-2xl text-black text-center bg-white md:hidden">
+      <li class="flex-1 hover:bg-green-300 py-2"><a href="#head-nav"><i class="fas fa-home"></i></a></li>
+      <li class="flex-1 hover:bg-green-300 py-2"><a href="#flo"><i class="fas fa-leaf"></i></a></li>
+      <li class="flex-1 hover:bg-green-300 py-2"><a href="#map"><i class="fas fa-map-marked-alt"></i></a></li>
+      <li class="flex-1 hover:bg-green-300 py-2"><a href="#me"><i class="fas fa-user-circle"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="h-screen w-full">
+    <div class="bg_rgba">
+      <h1 class="text-5xl text-white font-serif md:text-8xl"><span id="main-title">世界に届けよう</span></h1>
+      <div class="rgba">
+
+      </div>
+    </div>
+  </main>
+
+  <!-- カルーセルスライダー -->
+
+  <h2 id="flo" class="text-5xl text-center font-serif font-extrabold mt-4 p-2 md:text-6xl">Show</h2>
+
+  <section id="pickup">
+    <ul id="slide">
+      <li class="mx-4"><img src="img/slide-flower6.jpg" alt="" ></li>
+      <li><img src="img/slide-flower5.jpg" alt="" ></li>
+      <li class="mx-4"><img src="img/slide-flower4.jpg" alt="" ></li>
+      <li><img src="img/slide-flower3.jpg" alt="" ></li>
+      <li class="mx-4"><img src="img/slide-flower2.png" alt="" ></li>
+      <li><img src="img/slide-flower.jpg" alt="" ></li>
+    </ul>
+  </section>
+
+  <section id="pick" class="xl:hidden">
+    <ul id="sliding">
+      <li><img src="img/slide-flower6.jpg" alt="フリー素材です。" ></li>
+      <li><img src="img/slide-flower5.jpg" alt="フリー素材です。" ></li>
+      <li><img src="img/slide-flower4.jpg" alt="フリー素材です。" ></li>
+      <li><img src="img/slide-flower3.jpg" alt="フリー素材です。" ></li>
+      <li><img src="img/slide-flower2.png" alt="フリー素材です。" ></li>
+      <li><img src="img/slide-flower.jpg" alt="フリー素材です。" ></li>
+    </ul>
+  </section>
+
+  <!-- Product-title -->
+  <section class="w-10/12 pt-4 block m-auto md:pt-6">
+    <h1 class="text-5xl text-center font-serif font-semibold md:text-6xl">Flower</h1>
+  </section>
+
+  <!-- Product -->
+  <section id="show" class="w-10/12 block m-auto ">
+    <div class="md:flex md:space-x-3">
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower1.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-6">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">バラ</h2>
+          <p class="text-center my-8">
+            バラの花言葉は色によって異なります。
+            赤色のバラは、【愛情】【情熱】などを意味します。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-red-500">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower2.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto pt-2 md:pt-4">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">ひまわり</h2>
+          <p class="text-center my-8">
+            ひまわりの花言葉は、【憧れ】【崇拝】などを意味します。
+            小輪のひまわりには、【高貴】という花言葉もあります。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn2" class="py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-yellow-500">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower3.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto pt-4 md:pt-6">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">スイレン</h2>
+          <p class="text-center my-8">
+            スイレンの花言葉は、【信頼】【信仰】などを意味します。
+            そして、古代エジプト太陽の象徴とされました。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn3" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-pink-400">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="md:flex md:space-x-3 md:mt-6 ">
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower4.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto pt-4 md:pt-6">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">菜の花</h2>
+          <p class="text-center my-8">
+            菜の花の花言葉は、【快活】【明るさ】を意味します。
+            色によって明確な花言葉はつけられていません。<br>
+          </p>
+          <h2 class="text-right text-white font-medium ">
+            <a href="#flo" id="btn4" class="py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-yellow-300">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower5.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-8">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">ユリ</h2>
+          <p class="text-center my-8">
+            ユリの花言葉は、【純粋】という意味です。
+            他にも【無垢】【威厳】という意味もつけられています。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn5" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-green-500">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower6.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-8">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">ハイビスカス</h2>
+          <p class="text-center my-8">
+            ハイビスカスの花言葉は、【繊細な美】【新しい恋】という意味です。ハイビスカスの開花時期は5月〜10月です。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn6" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-red-600">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="md:flex md:space-x-3 md:mt-6 ">
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower7.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-8">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">キク</h2>
+          <p class="text-center my-8">
+            キクの花言葉は、【高貴】【高潔】などという意味です。
+            キクの名前は、【窮まる】が語源となっています。
+            <br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn7" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-yellow-700">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower8.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-8">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">ボタン</h2>
+          <p class="text-center my-8">
+            ボタンの花言葉は【王者の風格】【富貴】という意味です。
+            ボタンは、日本やアジアで【百花の王様】と呼ばれています。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn8" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-pink-200">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+      <div id="grid" class="bg-gray-100 shadow-2xl rounded-md">
+        <img src="img/flower9.jpg" alt="フリー素材です。" class="w-full h-1/2">
+
+        <div id="msg" class="w-10/12 block m-auto py-4 md:py-8">
+          <h2 class="mb-3 font-extrabold font-serif text-xl">マーガレット</h2>
+          <p class="text-center my-8">
+            マーガレットの花言葉は、恋愛に関するポジティブな意味が多いです。
+            例えば、【恋占い】【真実の愛】など。<br>
+          </p>
+          <h2 class="text-right text-white font-medium">
+            <a href="#flo" id="btn9" class=" py-3 px-7 border-2 border-gray-400 rounded-md bg-black hover:bg-yellow-400">PUSH</a>
+          </h2>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP 地図がパリの理由：2024年オリンピックがパリで開催されるから-->
+  <section id="map" class="p-4">
+    <div class="md:flex md:justify-between" id="wrap">
+      <div class="w-full md:w-3/12 p-7" id="info">
+        <h3 class="pb-2 text-xl text-white font-extrabold">ルナーリア</h3>
+        <hr class="border-black border-2 ">
+        <p class="pt-1 text-white text-lg">
+          住所：フランス　パリ<br>
+          電話番号：0123−456−7890<br>
+          営業時間：10：00〜22：00<br>
+          休日：土曜日、日曜日、祝日<br>
+        </p>
+      </div>
+      <div class="w-full md:w-10/12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410651487!2d2.2769956608194577!3d48.85883363955856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z44OV44Op44Oz44K5IOODkeODqg!5e0!3m2!1sja!2sjp!4v1632323032240!5m2!1sja!2sjp" class="w-full" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      </div>
+    </section>
+  
+  <!-- CONTACT -->
+  <div class="w-full" id="connect">
+    <div id="contact" class="block m-auto pt-3">
+      <h2 class="text-white font-serif font-extrabold text-center p-5 text-6xl" id="">CONTACT</h2>
+      
+      <form action="index.html" method="post" onSubmit="checkSubmit()" class="w-full">
+        <div class="mb-3">
+          <label for="name" class="text-white font-serif text-2xl block mb-2">NAME</label>
+          <input type="text" name="name" id="name" class="w-full p-2 rounded-md bg-white border-2 border-black" placeholder="お名前を入力してください">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="text-white font-serif text-2xl block  mb-2">Email</label>
+          <input type="text" name="email" id="email" class="w-full p-2 rounded-md bg-white border-2 border-black" placeholder="メールアドレスを入力してください">
+        </div>
+        <div class="mb-3">
+          <label for="date" class="text-white font-serif text-2xl block  mb-2">Date</label>
+          <input type="date" name="date" id="date"  class="w-full p-2 rounded-md bg-white border-2 border-black" >
+        </div>
+        <div class="mb-3">
+          <label for="message" class="text-white font-serif text-2xl block mb-2">Message</label>
+          <textarea type="text" name="message" id="message" class="w-full h-32 p-2 rounded-md bg-white border-2 border-black" placeholder="内容を入力してください"></textarea>
+        </div>
+        
+        <input id="btn" type="submit" value="Send" class="border-0 cursor-pointer leading-none bg-black px-10 py-6 rounded-md text-xl text-white  block m-auto shadow-2xl hover:bg-white hover:text-black">
+      </form>
+    </div>
+  </div>
+    
+
+    <!-- My Web Site -->
+    <section class="md:flex bg-gray-300 p-8 md:p-0" id="me">
+      <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="img/face.png" alt="私のアイコン画像です。" width="384" height="512">
+      <div class="w-full pt-6 md:p-8 text-center md:text-left space-y-4">
+          <h1 class="text-4xl font-serif font-extrabold">Author</h1>
+          <p class="text-2xl font-semibold">Tokky</p>
+          <div class="text-cyan-600 font-medium">
+           <p>HTML, CSS(tailwindcss), jQueryで架空のサイトを作成しました。</p>
+          </div>
+      </div>
+        <div class="md:w-full pt-6 md:p-8 text-center md:text-left space-y-4">
+          <h1 class="text-4xl font-serif font-extrabold text-center">My Web</h1>
+          <div class="flex text-cyan-600 font-medium justify-center items-center space-x-4">
+            <p class="text-3xl text-blue-300 bg-black p-4 rounded-full hover:bg-white hover:text-blue-600"><a id="twitter" href="https://twitter.com/Stormy_Kindred" target="_blank"><i class="fab fa-twitter"></i></a></p>
+            <p class="text-3xl text-white bg-black p-4 rounded-full hover:bg-white hover:text-black"><a id="stand" href="https://stand.fm/channels/6014d3df85b142d0d8c005a9" target="_blank"><i class="fas fa-microphone-alt"></i></a></p>
+          </div>
+        </div>
+    </section>
+
+  <!-- footer -->
+  <footer class="p-4 bg-black mb-12 md:mb-0">
+    <h1 class="text-xl font-serif font-medium text-green-300 text-center">Flower-Sample-Site@2021</h1>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
+</body>
+</html>
